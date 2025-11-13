@@ -1,0 +1,17 @@
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Node / builds / caches
+node_modules/
+dist/
+build/
+out/
+target/
+.cache/
+
+# Logs
+*.log

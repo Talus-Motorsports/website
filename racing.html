@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car1 </title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar" aria-label="menu">
+    <div class="navbar-wrapper navbar-grid">
+      <!--menu toggle(left) -->
+      <button
+        class="menu-toggle" aria-expanded="false" aria-controls="navbar-drawer" aria-label="open menu">
+      </button>
+      <!--triangle-->
+      <svg class="triangle" width="34" height="30" viewBox="-3 -3 34 30" aria-hidden="true">
+        <polygon
+          points="17,0 34,29.44 0,29.44"
+          stroke="black"
+          stroke-width="5"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+      <!-- Bracket -->
+      <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <!-- top bracket bar -->
+        <path
+          d="M15 15 H47 M15 15 V27 M47 15 V27"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="square"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+
+
+      <a class="logo" href="./index.html" aria-label="home">
+        <img src="./img/TalusWords.png" alt="WKR Logo">
+      </a>
+      <!-- links (right) -->
+      <ul class="navbar-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li><a href = "./cars.html">Our Cars</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "./about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--drop down -->
+  <aside id="navbar-drawer" class="nav-drawer" hidden>
+    <nav aria-label="drawer menu">
+      <ul class = "drawer-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li> <a href = "./cars.html">Cars</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
+
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
+
+
+
+<section class="racing-hero film film--light" aria-label="Racing hero">
+  <img class="racing-hero-img" src="./img/Racing/RacingHeroCamaro.JPEG" alt="">
+  <h2 class="racing-title"> Racing </h2>
+</section>
+
+<article class="racing-body">
+  <nav class="pill-nav" aria-label="Jump to section">
+    <a class="pill" href="#Times">Timing</a>
+    <a class="pill" href="#laps">Compare Laps</a>
+    <a class="pill" href="#analysis">Analysis</a>
+  </nav>
+  <div class="pill-sep"></div>
+  <p>
+    Racing lets us compete, connect, and have fun all at the same time.
+    It's a humbling experience that pushes everyone to learn something new. Racing also lets us see
+    what works, what doesn't, and what is the most enjoyable.
+    each car is equipped with a gps module, a tablet, and a camera to record data.
+  </p>
+
+</article>
+<div class="pill-sep"></div>
+<h3 id="Times" class="racing-subtitle">Racing results</h3>
+
+<section class="race-results">
+
+  <table class="race-table">
+    <thead>
+    <tr>
+      <th class="car-col">Car</th>
+      <th>Best Lap (s)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Race Corvette</td>
+      <td class="fastest">43.375</td>
+    </tr>
+    <tr>
+      <td>Mclaren</td>
+      <td>46.610</td>
+    </tr>
+    <tr>
+      <td>Gulf Mustang</td>
+      <td>48.437</td>
+    </tr>
+    <tr>
+      <td>Z28 Camaro</td>
+      <td>49.010</td>
+    </tr>
+    <tr>
+      <td>Camaro SS</td>
+      <td>50.45</td>
+    </tr>
+    <tr>
+      <td>Boss Mustang</td>
+      <td>50.640</td>
+    </tr>
+    </tbody>
+  </table>
+  </section>
+
+<article class="racing-body">
+  <p>
+    As shown above, most of the cars are within a similar pack besides a few outliers like the Corvette. many different factors
+    lead to this such as tires, weight, chassis, and suspension set up.
+  </p>
+</article>
+
+<hr class = "section-sep">
+
+<h3 class="racing-subtitle">The Track</h3>
+  <div class="racing-img">
+    <img class = "track-img" src = "./img/Racing/LimeRockTrack_SoloStorm.jpg" alt = "Lime Rock Track">
+  </div>
+
+<article class="racing-body">
+  <p>
+    The track is short yet fairly diverse. There are many different challenges throughout. The 2 most difficult
+    Corners tend to be Turn 3 and Turn 5. turn 3 is a tight uphill turn with a grade reversal on exit.
+  </p>
+</article>
+
+<hr class = "section-sep">
+<template id="lapOptions">
+  <option data-src="./videos/Fastestlapmurphlimerock.mp4"
+          data-poster="./img/Racing/MurphVidCover.png">
+    Racing Corvette (fastest)
+  </option>
+
+  <option data-src="./videos/FastestLapJohn.mp4"
+          data-poster="./img/Racing/JohnVidCover.png">
+    Racing Corvette (2nd fastest)
+  </option>
+
+  <option data-src="./videos/PurpleCorvetteFastestLap.mp4"
+          data-poster="./img/Racing/Murph_T5.jpg">
+    Purple Corvette — Fastest Lap
+  </option>
+
+  <option data-src="./videos/FastestLap71Camaro.mp4"
+          data-poster="./img/Racing/CorvetteBest.jpg">
+    Corvette — Best Lap
+  </option>
+
+  <option data-src="./videos/Mustang_Heat2.mp4"
+          data-poster="./img/Racing/Mustang_Heat2.jpg">
+    Mustang — Heat 2
+  </option>
+</template>
+
+<h3 id="laps" class="racing-subtitle">Compare laps</h3>  <!-- 🔧 remove the extra '<' -->
+
+<section class="lap-compare" aria-label="Compare two laps">
+  <div class="lap-toolbar">
+    <label class="picker">
+      <select id="leftSel"></select>
+    </label>
+
+    <div class="sync-controls">
+      <button id="playBoth" type="button">Play both</button>
+      <button id="pauseBoth" type="button">Pause both</button>
+      <label class="lock"><input id="lockSync" type="checkbox" checked> Lock sync</label>
+    </div>
+
+    <label class="picker">
+      <select id="rightSel"></select>
+    </label>
+  </div>
+
+  <div class="lap-grid">
+    <figure class="lap-card">
+      <video id="vidL" class="lap-video" controls playsinline preload="metadata"
+             poster="./img/Racing/MurphVidCover.png">
+        <source src="./videos/Fastestlapmurphlimerock.mp4" type="video/mp4">
+      </video>
+    </figure>
+
+    <figure class="lap-card">
+      <video id="vidR" class="lap-video" controls playsinline preload="metadata"
+             poster="./img/Racing/JohnVidCover.png">
+        <source src="./videos/FastestLapJohn.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
+</section>
+
+<hr class = "section-sep">
+
+<h3 id="analysis" class="racing-subtitle">Analysis</h3>
+
+
+<article class="racing-body">
+  <p>
+    Here is an indepth breakdown of line choices, g forces, and techniques.
+    The turns with the greatest time deficits are depicted below.
+  </p>
+</article>
+
+<section class = "analysis-simple">
+  <figure class="analysis-figure">
+    <img
+      src="./img/Racing/Turn5analysis.jpg"
+      alt="Turn 5 overlay showing ideal (green) vs current (orange) line with speed and lateral-G traces." />
+  </figure>
+
+  <div class="analysis-text">
+    <h4 class = "analysis-subtitle">Overview </h4>
+    <p>
+      Here we have 2 drivers, green and red. Green is our faster time. Turn 5 is a long full 180 degree turn. it requires good balance and trajectories. it is inherently harder
+      to get through the corner on a wrong line.
+    </p>
+    <h4 class = "analysis-subtitle">Line Choice</h4>
+    <p>
+      A large portion of getting better is line choice. Red enters the corner at a faster speed yet loses time through the corner in comparison to green.
+      Green stays outside entering the corner allowing him to maintain speed and exit quicker. Doing this also lets him turn in sooner. this is marked by the arrows in the image.
+      reds later turn in and tighter overall radius forces the driver to slow down to make the corner and also forces them off the optimal line on exit. Notice how greens entry and exit
+      line are near parallel, where reds are over 180 requiring "backtracking" to get on line. this means green not only saves time through this corner, he will be faster and on a better line for the next.
+      </p>
+
+    <h4 class = "analysis-subtitle">Weight Balance</h4>
+      <p>
+        Weight transfer is where or how we load our suspension. This is directly related to line choice as well as throttle and braking control.
+        If we look at the first valley in our lateral g graph, we notice greens slope is significantly smoother and more mellow than reds.
+        The steepness of the slope is the rate at which we transition our weight into the corner. Sometimes this can still be a steep slope with an ideal lap but on a
+        longer corner where we're testing max lateral gs, Transferring our weight for the corner sooner rather than later matters too. by getting our suspension set in
+        before the corner, we don't get a sharp body roll while trying to max our lateral gs. This helps us preserve traction.
+      </p>
+    <h4 class = "analysis-subtitle">Throttle and Braking</h4>
+    <p>
+    Trail braking is the act of braking hard coming into the corner, then tapering off braking pressure as you reach the apex rather than braking entirely before. this lets you get the weight on your steering tires
+      and prevents some risks of understeering on initial steer in, especially in rear-wheel drive cars. after trail braking we need to transition over to our throttle after the apex.
+
+      This is a little complex for starting out, but the principles still apply.
+    </p>
+
+    <ul>
+      <li><b>Later apex:</b> earlier throttle pick-up and better exit.</li>
+      <li><b>Smoother Lat-G:</b> fewer spikes, higher average grip.</li>
+      <li><b>Exit priority:</b> trade 1–2 mph entry for +3–4 mph on exit.</li>
+    </ul>
+  </div>
+</section>
+
+<section class = "analysis-simple">
+  <figure class="analysis-figure">
+    <img
+      src="./img/Racing/Turn3analysis.jpg"
+      alt="Turn 5 overlay showing ideal (green) vs current (orange) line with speed and lateral-G traces." />
+  </figure>
+
+  <div class="analysis-text">
+    <h4 class = "analysis-subtitle"> Overview </h4>
+    <p>
+      Turn 3 is our weirdest turn. it has approx. 15 feet of elevation change and a harsh grade reversal at the top.
+      On this turn we actually see a reversal in trends from turn 5. Green sets up more inside and exits on the outside of the end of the turn.
+      This is mainly to get over the crest at the top of the corner straighter. Turning too much causes the car to decompress and spin on throttle.
+      Another reason for this is set up from the previous corner. Like the end of turn 5 into 6, we don't want to complicate our entry from turn 2 into 3.
+      Green enters on the same trajectory as exit so he doesn't have to set up again and can shift his weight for the corner sooner.
+
+      </p>
+
+    <h4 class = "analysis-subtitle"> Line Choice </h4>
+    <p>
+      Car set up was also a big thing on this corner. Red had way too high of a pressure in the tires. We see this in the data on our left increasing edge of our lateral g graph.
+      The large spike up and down is the car losing traction and regaining it. we see this in the middle of the corner which also forced the line further outside.
+
+    </p>
+    <ul>
+      <li><b>Later apex:</b> earlier throttle pick-up and better exit.</li>
+      <li><b>Smoother Lat-G:</b> fewer spikes, higher average grip.</li>
+      <li><b>Exit priority:</b> trade 1–2 mph entry for +3–4 mph on exit.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="getting-quicker">
+  <h3 class="racing-subtitle">Getting Quicker</h3>
+
+  <ul class="quick-list">
+    <li>
+      <h4>Line Choice</h4>
+      <p>Smooth arc in, straight exit out — carry speed, don’t fight for it.</p>
+    </li>
+    <li>
+      <h4>Throttle Balance</h4>
+      <p>Don’t snap-lift; a quick lift unloads the rear and invites oversteer.</p>
+    </li>
+    <li>
+      <h4>Gear & Powerband</h4>
+      <p>Arrive in the power — pick the gear that lets you roll on early.</p>
+    </li>
+    <li>
+      <h4>Steering Input</h4>
+      <p>Let the wheel talk; smooth hands find grip faster than big corrections.</p>
+    </li>
+    <li>
+      <h4>Tires</h4>
+      <p>Everything funnels through four patches — protect them to go fast.</p>
+    </li>
+    <li>
+      <h4>Time</h4>
+      <p>Seat time slows the world down — clarity becomes free lap time.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Brand / Logo -->
+    <section class="footer-col footer-brand" aria-label="Brand">
+      <!-- Replace the placeholder with your real logo -->
+      <a class="brand" href="/" aria-label="Home">
+        <img src="img/logo-placeholder.svg" alt="Your Logo" class="brand-logo">
+      </a>
+      <p class="brand-tag">Talus Motorsports</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="footer-contact">
+      <h3 id="footer-contact" class="footer-title">Contact</h3>
+      <ul class="footer-list">
+        <li>Pine Plains, NY</li>
+        <li><a href="tel:0000000000">###-###_####</a></li>
+        <li><a href="mailto:talusmotorsport.com">talusmotorsports@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Social -->
+    <section class="footer-col" aria-labelledby="footer-social">
+      <h3 id="footer-social" class="footer-title">Follow</h3>
+      <ul class="social-list">
+        <li><a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.7A5.3 5.3 0 1 1 6.7 13 5.3 5.3 0 0 1 12 7.7Zm0 2A3.3 3.3 0 1 0 15.3 13 3.3 3.3 0 0 0 12 9.7Zm5.7-2.9a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.2C19.8 4.5 12 4.5 12 4.5s-7.8 0-9.4.4A3 3 0 0 0 .5 7.1 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.6.4 9.4.4 9.4.4s7.8 0 9.4-.4a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-4.9ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copy">
+    <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
+  </div>
+</footer>
+<script src="./js/LapComare.js"></script>
+<script src="./js/carPageLogic.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/nav.js"></script>

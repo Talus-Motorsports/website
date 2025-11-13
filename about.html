@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About TMS</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<header>
+  <nav class="navbar" aria-label="menu">
+    <div class="navbar-wrapper navbar-grid">
+      <!--menu toggle(left) -->
+      <button
+        class="menu-toggle" aria-expanded="false" aria-controls="navbar-drawer" aria-label="open menu">
+      </button>
+      <!--triangle-->
+      <svg class="triangle" width="34" height="30" viewBox="-3 -3 34 30" aria-hidden="true">
+        <polygon
+          points="17,0 34,29.44 0,29.44"
+          stroke="black"
+          stroke-width="5"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <!-- top bracket bar -->
+        <path
+          d="M15 15 H47 M15 15 V27 M47 15 V27"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="square"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <a class="logo" href="index.html" aria-label="home">
+        <img src="img/TalusWords.png" alt="WKR Logo">
+      </a>
+      <!-- links (right) -->
+      <ul class="navbar-links">
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "cars.html">Our Cars</a></li>
+        <li><a href = "about.html">Information</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--drop down -->
+  <aside id="navbar-drawer" class="nav-drawer" hidden>
+    <nav aria-label="drawer menu">
+      <ul class = "drawer-links">
+        <li><a href = "index.html">Home</a></li>
+        <li> <a href = "cars.html">Cars</a></li>
+        <li><a href = "#info">About Talus</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="drawer-backdrop" hidden></div>
+
+</header>
+
+<body>
+
+<!-- New section: tint background, neatly separated -->
+<section class="page-body page-body--tint">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="header-underline">About TMS</h2>
+    </div>
+    <div class="rich-text">
+      <p> Talus Motorsports acquires and renovates vintage cars and 4×4 trucks for its own account
+        (not a service available to third party customers). The vehicles are highly modified with upgraded
+        parts, and they are typically designed for specialized applications, including track and off-road events.
+        The company employs a team of engineers and mechanics across two facility locations in Georgia and New York.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- gen footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Brand / Logo -->
+    <section class="footer-col footer-brand" aria-label="Brand">
+      <!-- Replace the placeholder with your real logo -->
+      <a class="brand" href="/" aria-label="Home">
+        <img src="img/logo-placeholder.svg" alt="Your Logo" class="brand-logo">
+      </a>
+      <p class="brand-tag">Talus Motorsports</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="footer-contact">
+      <h3 id="footer-contact" class="footer-title">Contact</h3>
+      <ul class="footer-list">
+        <li>Pine Plains, NY</li>
+        <li><a href="tel:5189491212">###-###_####</a></li>
+        <li><a href="mailto:info@willkeatingracing.com">talusmotorsports@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Social -->
+    <section class="footer-col" aria-labelledby="footer-social">
+      <h3 id="footer-social" class="footer-title">Follow</h3>
+      <ul class="social-list">
+        <li><a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.7A5.3 5.3 0 1 1 6.7 13 5.3 5.3 0 0 1 12 7.7Zm0 2A3.3 3.3 0 1 0 15.3 13 3.3 3.3 0 0 0 12 9.7Zm5.7-2.9a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.2C19.8 4.5 12 4.5 12 4.5s-7.8 0-9.4.4A3 3 0 0 0 .5 7.1 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.6.4 9.4.4 9.4.4s7.8 0 9.4-.4a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-4.9ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copy">
+    <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="./js/nav.js"></script>
+<script src="./js/carousel.js"></script>
+
+</body>
+</html>

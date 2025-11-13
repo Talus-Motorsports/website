@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car1 </title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+<header>
+  <nav class="navbar" aria-label="menu">
+    <div class="navbar-wrapper navbar-grid">
+      <!--menu toggle(left) -->
+      <button
+        class="menu-toggle" aria-expanded="false" aria-controls="navbar-drawer" aria-label="open menu">
+      </button>
+      <!--triangle-->
+      <svg class="triangle" width="34" height="30" viewBox="-3 -3 34 30" aria-hidden="true">
+        <polygon
+          points="17,0 34,29.44 0,29.44"
+          stroke="black"
+          stroke-width="5"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <!-- top bracket bar -->
+        <path
+          d="M15 15 H47 M15 15 V27 M47 15 V27"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="square"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+      <a class="logo" href="./index.html" aria-label="home">
+        <img src="./img/TalusWords.png" alt="WKR Logo">
+      </a>
+      <!-- links (right) -->
+      <ul class="navbar-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li><a href = "./cars.html">Our Cars</a></li>
+        <li><a href = "./about.html">Information</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--drop down -->
+  <aside id="navbar-drawer" class="nav-drawer" hidden>
+    <nav aria-label="drawer menu">
+      <ul class = "drawer-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li> <a href = "./cars.html">Cars</a></li>
+        <li><a href = "./about.html">About Talus</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="drawer-backdrop" hidden></div>
+
+</header>
+
+
+
+
+
+<!-- car display carousel thing -->
+<div class="car-gallery" id="gallery">
+
+
+  <!-- ========== Main stage ========== -->
+  <div class="stage" id="stage" aria-live="polite">
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+
+    <!-- The element below will be swapped between <img> and <video> -->
+    <img id="stageMedia" class="stage-media" alt="Car photo" loading="eager" />
+
+    <div class="stage-title" id="stageTitle">Talus MotorSports</div>
+    <div class="counter" id="counter">1 / 8</div>
+
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+
+  <!-- content for hero-->
+  <div class="thumbs">
+    <button class="rail-btn prev" id="railPrev" aria-label="Scroll thumbnails left">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="thumb-rail" id="thumbRail" role="listbox" aria-label="Car media thumbnails">
+      <!-- Replace src with your own local images/videos. Use data-type="video" and data-src with MP4 for videos. -->
+      <button class="thumb active" role="option" aria-selected="true" data-index="0" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteLFF.JPEG" title="car pic">
+        <img alt="Engine bay" loading="lazy" src="./img/BlueCorvette/BlueCorvetteLFF.JPEG" />
+      </button>
+      <button class="thumb active" role="option" aria-selected="true" data-index="0" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteFR.JPEG" title="car pic">
+        <img alt="Engine bay" loading="lazy" src="./img/BlueCorvette/BlueCorvetteFR.JPEG" />
+      </button>
+      <button class="thumb" role="option" data-index="1" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteL.JPEG" title="Side profile">
+        <img alt="Side profile" loading="lazy" src="./img/BlueCorvette/BlueCorvetteL.JPEG" />
+      </button>
+      <button class="thumb" role="option" data-index="7" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteRear.JPEG" title="Front">
+        <img alt="Docs" loading="lazy" src="./img/BlueCorvette/BlueCorvetteRear.JPEG"/>
+      </button>
+      <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteIntfR.JPEG" title="Interior">
+        <img alt="Interior" loading="lazy" src="./img/BlueCorvette/BlueCorvetteIntfR.JPEG"/>
+      </button>
+      <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/BlueCorvette/BlueCorvetteIntfL.JPEG" title="Interior">
+        <img alt="Interior" loading="lazy" src="./img/BlueCorvette/BlueCorvetteIntfL.JPEG"/>
+      </button>
+    </div>
+    <button class="rail-btn next" id="railNext" aria-label="Scroll thumbnails right">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</div>
+
+
+
+
+<footer class="specs-footer" aria-labelledby="specs-footer-title">
+  <div class="specs-footer__head center">
+    <h3 id="specs-footer-title" class="specs-footer__title">Purple Corvette</h3>
+  </div>
+
+  <dl class="specs-footer__grid">
+    <div class="specs-tile"><dt>Engine</dt><dd>427 V8</dd></div>
+    <div class="specs-tile"><dt>Transmission</dt><dd>Manual</dd></div>
+    <div class="specs-tile"><dt>Suspension</dt><dd>DK</dd></div>
+    <div class="specs-tile"><dt>Power</dt><dd>500 whp</dd></div>
+    <div class="specs-tile"><dt>Induction</dt><dd>N/A</dd></div>
+    <div class="specs-tile"><dt>Weight</dt><dd>a bit</dd></div>
+  </dl>
+</footer>
+
+
+<section class="feature-sections" aria-label="Car details">
+  <!-- Row 1: text left, image right (text wraps the image) -->
+  <article class="story">
+    <img class="float-right" src="./img/BlueCorvette/BlueCorvetteLRclose.JPEG" alt="Camaro three-quarter view">
+    <h2>Background</h2>
+    <p>Street-driven build that keeps the spirit alive—balanced, responsive and sorted. Finished in a period-correct blue over a clean, functional interior, this Z28 pairs a freshened 13B-REW with a single-turbo setup tuned for reliability and midrange.</p>
+    <p>Chassis and cooling have been addressed throughout to support spirited use while maintaining road manners. Recent service includes fluids, plugs and a full nut-and-bolt check.</p>
+
+  </article>
+
+  <hr class="section-sep">
+
+  <!-- Row 2: image left, text right (flip) -->
+  <article class="story story--reverse">
+    <img class="float-left" src="./img/BlueCorvette/BlueCorvetteF.JPEG" alt="Engine bay single-turbo">
+    <h2>Modifications</h2>
+    <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
+    <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>
+
+  </article>
+
+  <hr class="section-sep">
+
+  <!-- Row 3: image right, text left (flip) -->
+  <article class="story">
+    <img class="float-right" src="./img/BlueCorvette/BlueCorvetteLFclose.JPEG" alt="Engine bay single-turbo">
+    <h2>Driving</h2>
+    <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
+    <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>
+
+  </article>
+
+  <hr class="section-sep">
+
+  <article class="story">
+    <h3>Check Out Other Cars</h3>
+
+    <div class="carousel-panel" aria-labelledby="cars-rect-title">
+      <div class = "carousel" aria-label = "Car projects">
+        <button class="carousel-nav prev" aria-label="Previous Item" type="button"></button>
+
+        <div class="carousel-viewport" tabindex="0" aria-label="Car projects">
+          <ul class="carousel-track">
+
+            <!-- first card -->
+            <li class = "carousel-card">
+              <a href = "car1.html" class="card-link">
+                <img src ="./img/CamaroZ28/Z28CamaroFront.jpg" alt="Z28 Front">
+                <div class = "card-content">
+                  <h4> Z28 Camaro</h4>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 2-->
+            <li class = "carousel-card">
+              <a href = "car2.html" class="card-link">
+                <img src ="img/PlymouthCuda/CudaFLcorner.jpg" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Car 2</h4>
+                </div>
+              </a>
+            </li>
+
+            <!-- Card 3 -->
+            <li class = "carousel-card">
+              <a href = "car1.html" class="card-link">
+                <img src ="./img/PontiacFirebird/FirebirdCV.jpg" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Pontiac Firebird</h4>
+                </div>
+              </a>
+            </li>
+            <!-- Card 4 -->
+            <li class = "carousel-card">
+              <a href = "car1.html" class="card-link">
+                <img src ="./img/GulfMustang/gulfMustang16_9.jpg" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Gulf Mustang </h4>
+                </div>
+              </a>
+            </li>
+            <!-- Card 5 -->
+            <li class = "carousel-card">
+              <a href = "car1.html" class="card-link">
+                <img src ="./img/PurpleCorvette/purpleCorvetteF.jpg" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> purple corvette </h4>
+                </div>
+              </a>
+            </li>
+            <!-- card 6 -->
+            <li class = "carousel-card">
+              <a href = "./CamaroSS.html" class="card-link">
+                <img src ="./img/CamaroSS/CamaroSSfront.JPEG" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Camaro SS </h4>
+                </div>
+              </a>
+            </li>
+            <li class = "carousel-card">
+              <a href = "71Camaro.html" class="card-link">
+                <img src ="./img/BossMustang/BossMustangFront.JPEG" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Boss Mustang </h4>
+                </div>
+              </a>
+            </li>
+            <li class = "carousel-card">
+              <a href = "71Camaro.html" class="card-link">
+                <img src ="./img/RaceCorvette/RaceCorvetteFront.JPEG" alt="Old car photo">
+                <div class = "card-content">
+                  <h4> Race Corvette </h4>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <button class="carousel-nav next" aria-label="Next Item" type="button"></button>
+      </div>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Brand / Logo -->
+    <section class="footer-col footer-brand" aria-label="Brand">
+      <!-- Replace the placeholder with your real logo -->
+      <a class="brand" href="/" aria-label="Home">
+        <img src="img/logo-placeholder.svg" alt="Your Logo" class="brand-logo">
+      </a>
+      <p class="brand-tag">Talus Motorsports</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="footer-contact">
+      <h3 id="footer-contact" class="footer-title">Contact</h3>
+      <ul class="footer-list">
+        <li>Pine Plains, NY</li>
+        <li><a href="tel:0000000000">###-###_####</a></li>
+        <li><a href="mailto:talusmotorsport.com">talusmotorsports@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Social -->
+    <section class="footer-col" aria-labelledby="footer-social">
+      <h3 id="footer-social" class="footer-title">Follow</h3>
+      <ul class="social-list">
+        <li><a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.7A5.3 5.3 0 1 1 6.7 13 5.3 5.3 0 0 1 12 7.7Zm0 2A3.3 3.3 0 1 0 15.3 13 3.3 3.3 0 0 0 12 9.7Zm5.7-2.9a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.2C19.8 4.5 12 4.5 12 4.5s-7.8 0-9.4.4A3 3 0 0 0 .5 7.1 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.6.4 9.4.4 9.4.4s7.8 0 9.4-.4a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-4.9ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copy">
+    <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="./js/carPageLogic.js"></script>
+<script src="./js/carousel.js"></script>
+<script src="./js/nav.js"></script>

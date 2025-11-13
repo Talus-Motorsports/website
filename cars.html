@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Cars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class = "has-full-hero">
+
+<!--nav bar -->
+
+<header>
+  <nav class="navbar" aria-label="menu">
+    <div class="navbar-wrapper navbar-grid">
+      <!--menu toggle(left) -->
+      <button
+        class="menu-toggle" aria-expanded="false" aria-controls="navbar-drawer" aria-label="open menu">
+      </button>
+      <!--triangle-->
+      <svg class="triangle" width="34" height="30" viewBox="-3 -3 34 30" aria-hidden="true">
+        <polygon
+          points="17,0 34,29.44 0,29.44"
+          stroke="black"
+          stroke-width="5"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+      <!-- Bracket -->
+      <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <!-- top bracket bar -->
+        <path
+          d="M15 15 H47 M15 15 V27 M47 15 V27"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="square"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+
+
+      <a class="logo" href="./index.html" aria-label="home">
+        <img src="./img/TalusWords.png" alt="WKR Logo">
+      </a>
+      <!-- links (right) -->
+      <ul class="navbar-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li><a href = "./cars.html">Our Cars</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "./about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--drop down -->
+  <aside id="navbar-drawer" class="nav-drawer" hidden>
+    <nav aria-label="drawer menu">
+      <ul class = "drawer-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li> <a href = "./cars.html">Cars</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
+
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
+
+<section class="cars-hero">
+  <img class = "cars-hero-img" src="./img/Index/TalusOurCarsHero.JPEG" alt="Cars lined up in the paddock">
+    <h1 class="cars-page-title">The Garage</h1>
+</section>
+
+
+<section class="page-body">
+  <div class="container">
+    <div class="cars-intro">
+      <p>Below showcases each of our cars. Feel free to explore.</p>
+    </div>
+    <div class="car-filter">
+      <button id="modeToggle" class="mode-toggle is-race" role="switch" aria-checked="false" type="button">
+        <span class="track-label track-left">Race Cars</span>
+        <span class="track-label track-right">4×4</span>
+        <span class="toggle-thumb"><span class="thumb-label">Race Cars</span></span>
+      </button>
+    </div>
+    <p class="filter-count" aria-live="polite"></p>
+    <ul class="cars-grid" aria-label="Cars">
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./PurpleCorvette.html">
+          <img src="./img/PurpleCorvette/PurpleCorvetteFRout.JPEG" alt="purple Corvette" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>66 Corvette</h3>
+            <p class="meta">454 • T5 • Circuit Racing</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./BlueCorvette.html">
+          <img src="./img/BlueCorvette/BlueCorvetteLFF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>63 Corvette</h3>
+            <p class="meta">454 • T5 • Circuit Racing</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./GulfMustang.html">
+          <img src="./img/GulfMustang/GulfMustangRFout.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>67 Mustang Coupe</h3>
+            <p class="meta">347 • 4speed • Circuit Racing</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./BossMustang.html">
+          <img src="./img/BossMustang/BossMustangFL.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>69 Boss Mustang</h3>
+            <p class="meta">460 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./71Camaro.html">
+          <img src="./img/z28photo.jpg" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>71 Camaro</h3>
+            <p class="meta">572 • T5 • Circuit Racing</p>
+          </div>
+        </a>
+      </li>
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./CamaroSS.html">
+          <img src="./img/CamaroSS/CamaroSSRF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>67 Camaro</h3>
+            <p class="meta">427 blue print • T5 • Circuit</p>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./PontiacFirebird.html">
+          <img src="./img/PontiacFirebird/PontiacFirebirdRF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>68 Pontiac Firebird</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./PlymouthCuda.html">
+          <img src="./img/PlymouthCuda/PlymouthCudaRF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>71 Cuda</h3>
+            <p class="meta">460 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+
+
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./RaceCorvette.html">
+          <img src="./img/RaceCorvette/RaceCorvetteRF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Race Corvette</h3>
+            <p class="meta">350 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="race">
+        <a class="card-link" href="./FastbackMustang.html">
+          <img src="./img/RaceMustang/RaceMustang.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Fastback Mustang</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+
+
+
+      <li class="car-card" data-type="4x4">
+        <a class="card-link" href="./Jeep.html">
+          <img src="./img/Jeep/JeepLF.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Jeep</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="4x4">
+        <a class="card-link" href="./Powerwagon.html">
+          <img src="./img/PowerWagon/PowerWagon.JPEG" alt="Dodge Power Wagon" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Dodge Power Wagon</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="4x4">
+        <a class="card-link" href="./Landcruiser.html">
+          <img src="img/LandCruiser/Landcruiser.JPEG" alt="Land Cruiser" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Land Cruiser</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="4x4">
+        <a class="card-link" href="./F250.html">
+          <img src="./img/Fordf250/Fordf250.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>F250</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="car-card" data-type="4x4">
+        <a class="card-link" href="./Bronco.html">
+          <img src="./img/Bronco/Bronco.JPEG" alt="1966 Mustang Fastback" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Bronco</h3>
+            <p class="meta">302 • T5 • Road/AutoX</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+
+<!-- gen footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Brand / Logo -->
+    <section class="footer-col footer-brand" aria-label="Brand">
+      <!-- Replace the placeholder with your real logo -->
+      <a class="brand" href="/" aria-label="Home">
+        <img src="img/logo-placeholder.svg" alt="Your Logo" class="brand-logo">
+      </a>
+      <p class="brand-tag">Talus Motorsports</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="footer-contact">
+      <h3 id="footer-contact" class="footer-title">Contact</h3>
+      <ul class="footer-list">
+        <li>Pine Plains, NY</li>
+        <li><a href="tel:0000000000">###-###_####</a></li>
+        <li><a href="mailto:talusmotorsport.com">talusmotorsports@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Social -->
+    <section class="footer-col" aria-labelledby="footer-social">
+      <h3 id="footer-social" class="footer-title">Follow</h3>
+      <ul class="social-list">
+        <li><a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.7A5.3 5.3 0 1 1 6.7 13 5.3 5.3 0 0 1 12 7.7Zm0 2A3.3 3.3 0 1 0 15.3 13 3.3 3.3 0 0 0 12 9.7Zm5.7-2.9a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.2C19.8 4.5 12 4.5 12 4.5s-7.8 0-9.4.4A3 3 0 0 0 .5 7.1 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.6.4 9.4.4 9.4.4s7.8 0 9.4-.4a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-4.9ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copy">
+    <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src =./js/mode-toggle.js></script>
+<script src = ./js/nav.js></script>
+<script src = ./js/carousel.js></script>
+
+</body>
+</html>

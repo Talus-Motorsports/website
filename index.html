@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talus Motorsports</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar" aria-label="menu">
+    <div class="navbar-wrapper navbar-grid">
+      <!--menu toggle(left) -->
+      <button
+        class="menu-toggle" aria-expanded="false" aria-controls="navbar-drawer" aria-label="open menu">
+      </button>
+        <!--triangle-->
+        <svg class="triangle" width="34" height="30" viewBox="-3 -3 34 30" aria-hidden="true">
+          <polygon
+            points="17,0 34,29.44 0,29.44"
+            stroke="black"
+            stroke-width="5"
+            fill="none"
+            vector-effect="non-scaling-stroke"/>
+        </svg>
+      <!-- Bracket -->
+      <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <!-- top bracket bar -->
+        <path
+          d="M15 15 H47 M15 15 V27 M47 15 V27"
+          stroke="white"
+          stroke-width="4"
+          stroke-linecap="square"
+          fill="none"
+          vector-effect="non-scaling-stroke"/>
+      </svg>
+
+
+
+    <a class="logo" href="./index.html" aria-label="home">
+      <img src="./img/TalusWords.png" alt="WKR Logo">
+    </a>
+      <!-- links (right) -->
+    <ul class="navbar-links">
+      <li><a href = "./index.html">Home</a></li>
+      <li><a href = "./cars.html">Our Cars</a></li>
+      <li><a href = "./racing.html">Racing</a></li>
+      <li><a href = "./about.html">About</a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <!--drop down -->
+  <aside id="navbar-drawer" class="nav-drawer" hidden>
+    <nav aria-label="drawer menu">
+      <ul class = "drawer-links">
+        <li><a href = "./index.html">Home</a></li>
+        <li> <a href = "./cars.html">Cars</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
+
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
+<!-- hero section/media -->
+<section class="hero">
+  <video class = "hero-video"
+         autoplay muted loop playsinline preload="auto"
+         poster="./img/Index/TalusHeroPoster.jpg"
+         aria-label="overview of TMS">
+    <source src="./videos/TalusHeroDroneModified.mp4" type="video/mp4">
+  </video>
+
+  <img src = "./img/Index/CamarosHero.JPEG" alt="test hero" class=" hero-img">
+  <div class="hero-text">
+    <h1></h1>
+    <p></p>
+    <!--<a href= "cars.html" class="hero-button">Check Out Our Projects</a>-->
+  </div>
+</section>
+
+<div class="separator separator--black" style="--sepH: 36px"></div>
+
+
+
+<!-- our cars section -->
+<section class="index-banner" aria-labelledby="cars-cta-title">
+  <img class="bg-img" src="./img/Index/TalusOurCarsIndex.JPEG" alt="" loading="eager" decoding="async" />
+  <div class = "banner-title">
+    <h2 id="cars-banner-title" class="header-underline">Our Cars</h2>
+  </div>
+  <div class="banner-content">
+    <p class="lead">From vintage race cars to 4x4 — take a look inside the garage.</p>
+
+    <p>
+      <a class="btn-cta" href="./cars.html">Explore the Garage</a>
+    </p>
+  </div>
+</section>
+
+<div class="separator separator--black" style="--sepH: 36px"></div>
+
+
+<!-- Racing Banner -->
+<section class="index-banner" aria-labelledby="about-banner-title">
+  <img class="bg-img" src="./img/Index/RacingHero.JPEG" alt="" loading="eager" decoding="async" />
+  <!-- top-left heading (separate from CTA) -->
+  <div class="banner-title">
+    <h2 id="racing-banner-title" class="header-underline">Racing</h2>
+  </div>
+  <div class="banner-content banner-content--br">
+    <p class="lead">*text*</p>
+    <a class="btn-cta" href="./racing.html">Learn more</a>
+  </div>
+</section>
+
+<div class="separator separator--black" style="--sepH: 36px"></div>
+
+<!--about Section-->
+<section class="index-banner film film--light" aria-labelledby="about-banner-title">
+  <img class="bg-img" src="./img/Index/TalusAboutHero.JPEG" alt="" loading="eager" decoding="async" />
+  <!-- top-left heading (separate from CTA) -->
+  <div class="banner-title">
+    <h2 id="about-banner-title" class="header-underline">About TMS</h2>
+  </div>
+
+  <!-- CTA block (separate from heading) -->
+  <div class="banner-content banner-content--br">
+    <p class="lead">*text*</p>
+    <a class="btn-cta" href="./about.html">Learn more</a>
+  </div>
+</section>
+
+
+
+<!-- gen footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Brand / Logo -->
+    <section class="footer-col footer-brand" aria-label="Brand">
+      <!-- Replace the placeholder with your real logo -->
+      <a class="brand" href="/" aria-label="Home">
+        <img src="img/logo-placeholder.svg" alt="Your Logo" class="brand-logo">
+      </a>
+      <p class="brand-tag">Talus Motorsports</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="footer-col" aria-labelledby="footer-contact">
+      <h3 id="footer-contact" class="footer-title">Contact</h3>
+      <ul class="footer-list">
+        <li>Pine Plains, NY</li>
+        <li><a href="tel:5189491212">###-###_####</a></li>
+        <li><a href="mailto:info@willkeatingracing.com">talusmotorsports@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Social -->
+    <section class="footer-col" aria-labelledby="footer-social">
+      <h3 id="footer-social" class="footer-title">Follow</h3>
+      <ul class="social-list">
+        <li><a class="social" href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.7A5.3 5.3 0 1 1 6.7 13 5.3 5.3 0 0 1 12 7.7Zm0 2A3.3 3.3 0 1 0 15.3 13 3.3 3.3 0 0 0 12 9.7Zm5.7-2.9a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+        </a></li>
+        <li><a class="social" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 7.1a3 3 0 0 0-2.1-2.2C19.8 4.5 12 4.5 12 4.5s-7.8 0-9.4.4A3 3 0 0 0 .5 7.1 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.6.4 9.4.4 9.4.4s7.8 0 9.4-.4a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-4.9ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/></svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copy">
+    <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/nav.js"></script>
+
+</body>
+
+</html>
