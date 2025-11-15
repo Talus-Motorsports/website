@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About TMS</title>
+  <title>Car1 </title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+<body>
 
 <header>
   <nav class="navbar" aria-label="menu">
@@ -22,7 +23,7 @@
           fill="none"
           vector-effect="non-scaling-stroke"/>
       </svg>
-
+      <!-- Bracket -->
       <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
         <!-- top bracket bar -->
         <path
@@ -34,15 +35,17 @@
           vector-effect="non-scaling-stroke"/>
       </svg>
 
-      <a class="logo" href="index.html" aria-label="home">
-        <img src="img/TalusWords.png" alt="WKR Logo">
+
+
+      <a class="logo" href="./index.html" aria-label="home">
+        <img src="./img/TalusWords.png" alt="WKR Logo">
       </a>
       <!-- links (right) -->
       <ul class="navbar-links">
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "cars.html">Our Cars</a></li>
-        <li><a href = "about.html">Information</a></li>
-        <li><a href = "#contact">Contact</a></li>
+        <li><a href = "./index.html">Home</a></li>
+        <li><a href = "./cars.html">Our Cars</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "./about.html">About</a></li>
       </ul>
     </div>
   </nav>
@@ -51,36 +54,44 @@
   <aside id="navbar-drawer" class="nav-drawer" hidden>
     <nav aria-label="drawer menu">
       <ul class = "drawer-links">
-        <li><a href = "index.html">Home</a></li>
-        <li> <a href = "cars.html">Cars</a></li>
-        <li><a href = "#info">About Talus</a></li>
+        <li><a href = "./index.html">Home</a></li>
+        <li> <a href = "./cars.html">Cars</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
         <li><a href = "#contact">Contact</a></li>
       </ul>
     </nav>
   </aside>
-  <div class="drawer-backdrop" hidden></div>
-
 </header>
 
-<body>
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
 
-<!-- New section: tint background, neatly separated -->
-<section class="page-body page-body--tint">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="header-underline">About TMS</h2>
-    </div>
-    <div class="rich-text">
-      <p> Talus Motorsports acquires and renovates vintage cars and 4×4 trucks for its own account
-        (not a service available to third party customers). The vehicles are highly modified with upgraded
-        parts, and they are typically designed for specialized applications, including track and off-road events.
-        The company employs a team of engineers and mechanics across two facility locations in Georgia and New York.
-      </p>
-    </div>
-  </div>
+
+
+<section class="racing-hero film film--light" aria-label="Racing hero">
+  <img class="racing-hero-img" src="./img/About/AboutHero.JPEG" alt="">
+  <h2 class="racing-title"> About Talus Motorsports </h2>
 </section>
 
-<!-- gen footer -->
+
+<div class="pill-sep"></div>
+<h3 id="Times" class="racing-subtitle">What we do</h3>
+
+
+<article class="racing-body">
+  <p>
+    Talus Motorsports acquires and renovates vintage cars and 4×4 trucks for its own account
+    (not a service available to third party customers). The vehicles are highly modified with upgraded parts,
+    and they are typically designed for specialized applications, including track and off-road events.
+    The company employs a team of engineers and mechanics across two facility locations in Georgia and New York.
+  </p>
+</article>
+
+<hr class = "section-sep">
+
+
+<article class="racing-body"></article>
+<!-- footer -->
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <!-- Brand / Logo -->
@@ -97,8 +108,8 @@
       <h3 id="footer-contact" class="footer-title">Contact</h3>
       <ul class="footer-list">
         <li>Pine Plains, NY</li>
-        <li><a href="tel:5189491212">###-###_####</a></li>
-        <li><a href="mailto:info@willkeatingracing.com">talusmotorsports@gmail.com</a></li>
+        <li><a href="tel:0000000000">###-###_####</a></li>
+        <li><a href="mailto:talusmotorsport.com">talusmotorsports@gmail.com</a></li>
       </ul>
     </section>
 
@@ -124,9 +135,7 @@
     <p>© <span id="year"></span> Talus Motorsports. All rights reserved.</p>
   </div>
 </footer>
-
-<script src="./js/nav.js"></script>
+<script src="./js/LapComare.js"></script>
+<script src="./js/carPageLogic.js"></script>
 <script src="./js/carousel.js"></script>
-
-</body>
-</html>
+<script src="./js/nav.js"></script>

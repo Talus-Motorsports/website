@@ -7,7 +7,6 @@
 </head>
 <body>
 
-
 <header>
   <nav class="navbar" aria-label="menu">
     <div class="navbar-wrapper navbar-grid">
@@ -24,7 +23,7 @@
           fill="none"
           vector-effect="non-scaling-stroke"/>
       </svg>
-
+      <!-- Bracket -->
       <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
         <!-- top bracket bar -->
         <path
@@ -36,6 +35,8 @@
           vector-effect="non-scaling-stroke"/>
       </svg>
 
+
+
       <a class="logo" href="./index.html" aria-label="home">
         <img src="./img/TalusWords.png" alt="WKR Logo">
       </a>
@@ -43,8 +44,8 @@
       <ul class="navbar-links">
         <li><a href = "./index.html">Home</a></li>
         <li><a href = "./cars.html">Our Cars</a></li>
-        <li><a href = "./about.html">Information</a></li>
-        <li><a href = "#contact">Contact</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "./about.html">About</a></li>
       </ul>
     </div>
   </nav>
@@ -55,15 +56,16 @@
       <ul class = "drawer-links">
         <li><a href = "./index.html">Home</a></li>
         <li> <a href = "./cars.html">Cars</a></li>
-        <li><a href = "./about.html">About Talus</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
         <li><a href = "#contact">Contact</a></li>
       </ul>
     </nav>
   </aside>
-  <div class="drawer-backdrop" hidden></div>
-
 </header>
 
+
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
 
 
 
@@ -102,20 +104,17 @@
       <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/RaceCorvette/RaceCorvetteLR.JPEG" title="Interior">
         <img alt="Interior" loading="lazy" src="./img/RaceCorvette/RaceCorvetteLR.JPEG"/>
       </button>
+      <button class="thumb" role="option" data-index="3" data-type="image" data-src="./img/RaceCorvette/RaceCorvetteRearTire.JPEG" title="Underbody">
+        <img alt="Underbody" loading="lazy" src="./img/RaceCorvette/RaceCorvetteRearTire.JPEG"/>
+      </button>
+      <button class="thumb" role="option" data-index="3" data-type="image" data-src="./img/RaceCorvette/RaceCorvetteLFcorner.JPEG" title="Underbody">
+        <img alt="Underbody" loading="lazy" src="./img/RaceCorvette/RaceCorvetteLFcorner.JPEG"/>
+      </button>
       <button class="thumb" role="option" data-index="1" data-type="image" data-src="./img/RaceCorvette/RaceCorvetteintfExt.JPEG" title="Side profile">
         <img alt="Side profile" loading="lazy" src="./img/RaceCorvette/RaceCorvetteintfExt.JPEG" />
       </button>
       <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/RaceCorvette/RaceCorvetteintAbove.JPEG" title="Interior">
         <img alt="Interior" loading="lazy" src="./img/RaceCorvette/RaceCorvetteintAbove.JPEG"/>
-      </button>
-      <button class="thumb" role="option" data-index="3" data-type="image" data-src=".JPEG" title="Underbody">
-        <img alt="Underbody" loading="lazy" src=".JPEG"/>
-      </button>
-      <button class="thumb" role="option" data-index="5" data-type="image" data-src=".JPEG" title="Rear three-quarter">
-        <img alt="Rear three-quarter" loading="lazy" src=".JPEG"/>
-      </button>
-      <button class="thumb" role="option" data-index="6" data-type="image" data-src=".JPEG" title="Wheel detail">
-        <img alt="Wheel detail" loading="lazy" src=".JPEG"/>
       </button>
       <button class="thumb" role="option" data-index="4" data-type="video" data-src="" title="Walkaround video">
         <img alt="Video thumbnail" loading="lazy" src=""/>
@@ -149,7 +148,7 @@
 <section class="feature-sections" aria-label="Car details">
   <!-- Row 1: text left, image right (text wraps the image) -->
   <article class="story">
-    <img class="float-right" src="./img/PurpleCorvette/PurpleCorvetteLFcorner.JPEG" alt="Camaro three-quarter view">
+    <img class="float-right" src="./img/RaceCorvette/RaceCorvetteR.JPEG" alt="Camaro three-quarter view">
     <h2>Background</h2>
     <p>Street-driven build that keeps the spirit alive—balanced, responsive and sorted. Finished in a period-correct blue over a clean, functional interior, this Z28 pairs a freshened 13B-REW with a single-turbo setup tuned for reliability and midrange.</p>
     <p>Chassis and cooling have been addressed throughout to support spirited use while maintaining road manners. Recent service includes fluids, plugs and a full nut-and-bolt check.</p>
@@ -160,18 +159,17 @@
 
   <!-- Row 2: image left, text right (flip) -->
   <article class="story story--reverse">
-    <img class="float-left" src="./img/PontiacFirebird/firebirdEngineBay.JPEG" alt="Engine bay single-turbo">
+    <img class="float-left" src="./img/RaceCorvette/RaceCorvetteEngineBay.JPEG" alt="Engine bay single-turbo">
     <h2>Modifications</h2>
-    <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
-    <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>
-
+    <p>Street-driven build that keeps the spirit alive—balanced, responsive and sorted. Finished in a period-correct blue over a clean, functional interior, this ___ pairs a freshened 350 with a single-turbo setup tuned for reliability and midrange.</p>
+    <p>Chassis and cooling have been addressed throughout to support spirited use while maintaining road manners. Recent service includes fluids, plugs and a full nut-and-bolt check.</p>
   </article>
 
   <hr class="section-sep">
 
   <!-- Row 3: image right, text left (flip) -->
   <article class="story">
-    <img class="float-right" src="./img/PontiacFirebird/PontiacFirebirdLRlow.JPEG" alt="Engine bay single-turbo">
+    <img class="float-right" src="./img/RaceCorvette/RaceCorvetteRearTire.JPEG" alt="Engine bay single-turbo">
     <h2>Driving</h2>
     <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
     <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>

@@ -7,7 +7,6 @@
 </head>
 <body>
 
-
 <header>
   <nav class="navbar" aria-label="menu">
     <div class="navbar-wrapper navbar-grid">
@@ -24,7 +23,7 @@
           fill="none"
           vector-effect="non-scaling-stroke"/>
       </svg>
-
+      <!-- Bracket -->
       <svg class="bracket" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
         <!-- top bracket bar -->
         <path
@@ -36,6 +35,8 @@
           vector-effect="non-scaling-stroke"/>
       </svg>
 
+
+
       <a class="logo" href="./index.html" aria-label="home">
         <img src="./img/TalusWords.png" alt="WKR Logo">
       </a>
@@ -43,8 +44,8 @@
       <ul class="navbar-links">
         <li><a href = "./index.html">Home</a></li>
         <li><a href = "./cars.html">Our Cars</a></li>
-        <li><a href = "./about.html">Information</a></li>
-        <li><a href = "#contact">Contact</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
+        <li><a href = "./about.html">About</a></li>
       </ul>
     </div>
   </nav>
@@ -55,15 +56,16 @@
       <ul class = "drawer-links">
         <li><a href = "./index.html">Home</a></li>
         <li> <a href = "./cars.html">Cars</a></li>
-        <li><a href = "./about.html">About Talus</a></li>
+        <li><a href = "./about.html">About TMS</a></li>
+        <li><a href = "./racing.html">Racing</a></li>
         <li><a href = "#contact">Contact</a></li>
       </ul>
     </nav>
   </aside>
-  <div class="drawer-backdrop" hidden></div>
-
 </header>
 
+
+<div class="drawer-backdrop" hidden></div> <!--grey overlay -->
 
 
 
@@ -95,24 +97,21 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
     </button>
     <div class="thumb-rail" id="thumbRail" role="listbox" aria-label="Car media thumbnails">
-      <!-- Replace src with your own local images/videos. Use data-type="video" and data-src with MP4 for videos. -->
-      <button class="thumb active" role="option" aria-selected="true" data-index="0" data-type="image" data-src="./img/Fordf250/F250LF.JPEG" title="car pic">
-        <img alt="Engine bay" loading="lazy" src="./img/Fordf250/F250LF.JPEG" />
+
+      <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/Bronco/BroncoLF.JPEG" title="Interior">
+        <img alt="Interior" loading="lazy" src="./img/Bronco/BroncoLF.JPEG"/>
       </button>
-      <button class="thumb" role="option" data-index="7" data-type="image" data-src="./img/Fordf250/F250RF.JPEG" title="Documentation">
-        <img alt="Docs" loading="lazy" src="./img/Fordf250/F250RF.JPEG"/>
+      <button class="thumb active" role="option" aria-selected="true" data-index="0" data-type="image" data-src="./img/Bronco/BroncoRF.JPEG" title="car pic">
+        <img alt="Engine bay" loading="lazy" src="./img/Bronco/BroncoRF.JPEG" />
       </button>
-      <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/Fordf250/F250Interior.JPEG" title="Interior">
-        <img alt="Interior" loading="lazy" src="./img/Fordf250/F250Interior.JPEG"/>
+      <button class="thumb active" role="option" aria-selected="true" data-index="0" data-type="image" data-src="./img/Bronco/BroncoFront.JPEG" title="car pic">
+        <img alt="Engine bay" loading="lazy" src="./img/Bronco/BroncoFront.JPEG" />
       </button>
-      <button class="thumb" role="option" data-index="3" data-type="image" data-src="./img/LandCruiser/LandCruiserRear.JPEG" title="Underbody">
-        <img alt="Underbody" loading="lazy" src="./img/LandCruiser/LandCruiserRear.JPEG"/>
+      <button class="thumb" role="option" data-index="7" data-type="image" data-src="./img/Bronco/BroncoLR.JPEG" title="Documentation">
+        <img alt="Docs" loading="lazy" src="./img/Bronco/BroncoLR.JPEG"/>
       </button>
-      <button class="thumb" role="option" data-index="3" data-type="image" data-src="./img/LandCruiser/LandCruiserSeats.JPEG" title="Underbody">
-        <img alt="Underbody" loading="lazy" src="./img/LandCruiser/LandCruiserSeats.JPEG"/>
-      </button>
-      <button class="thumb" role="option" data-index="3" data-type="image" data-src="./img/LandCruiser/LandCruiserInterior.JPEG" title="Underbody">
-        <img alt="Underbody" loading="lazy" src="./img/LandCruiser/LandCruiserInterior.JPEG"/>
+      <button class="thumb" role="option" data-index="2" data-type="image" data-src="./img/Bronco/BroncoInterior.JPEG" title="Interior">
+        <img alt="Interior" loading="lazy" src="./img/Bronco/BroncoInterior.JPEG"/>
       </button>
     </div>
     <button class="rail-btn next" id="railNext" aria-label="Scroll thumbnails right">
@@ -144,9 +143,9 @@
 <section class="feature-sections" aria-label="Car details">
   <!-- Row 1: text left, image right (text wraps the image) -->
   <article class="story">
-    <img class="float-right" src="./img/RaceMustang/RaceMustangRear.JPEG" alt="Camaro three-quarter view">
+    <img class="float-right" src="./img/Bronco/BroncoLR.JPEG" alt="Camaro three-quarter view">
     <h2>Background</h2>
-    <p>Street-driven build that keeps the spirit alive—balanced, responsive and sorted. Finished in a period-correct blue over a clean, functional interior, this Z28 pairs a freshened 13B-REW with a single-turbo setup tuned for reliability and midrange.</p>
+    <p>Street-driven build that keeps the spirit alive—balanced, responsive and sorted. Finished in a period-correct blue over a clean, functional interior, this ___ pairs a freshened 350 with a single-turbo setup tuned for reliability and midrange.</p>
     <p>Chassis and cooling have been addressed throughout to support spirited use while maintaining road manners. Recent service includes fluids, plugs and a full nut-and-bolt check.</p>
 
   </article>
@@ -155,7 +154,7 @@
 
   <!-- Row 2: image left, text right (flip) -->
   <article class="story story--reverse">
-    <img class="float-left" src="./img/RaceMustang/RaceMustangEngineBay.JPEG" alt="Engine bay single-turbo">
+    <img class="float-left" src="./img/Bronco/BroncoLF.JPEG" alt="Engine bay single-turbo">
     <h2>Modifications</h2>
     <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
     <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>
@@ -166,7 +165,7 @@
 
   <!-- Row 3: image right, text left (flip) -->
   <article class="story">
-    <img class="float-right" src="./img/RaceMustang/RaceMustangInterior.JPEG" alt="Engine bay single-turbo">
+    <img class="float-right" src="./img/Bronco/BroncoInterior.JPEG" alt="Engine bay single-turbo">
     <h2>Driving</h2>
     <p>Reliability-first tune with strong midrange. Upgraded cooling—radiator, fans and baffled overflow—keeps temps in check in traffic and on spirited drives.</p>
     <p>Suspension is sorted with matched dampers and springs, fresh bushings and proper alignment for confident turn-in without sacrificing ride quality.</p>
