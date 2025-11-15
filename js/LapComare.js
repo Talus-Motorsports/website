@@ -5,7 +5,7 @@
   const vidR      = document.getElementById('vidR');
   const playBoth  = document.getElementById('playBoth');
   const pauseBoth = document.getElementById('pauseBoth');
-  const lockSync  = document.getElementById('lockSync');
+  // const lockSync  = document.getElementById('lockSync'); // no longer used
 
   // If you placed a <template id="lapOptions">…</template>, clone it into both selects.
   const optsTpl = document.getElementById('lapOptions');
@@ -31,7 +31,11 @@
     video.poster = poster;
 
     let s = video.querySelector('source');
-    if (!s) { s = document.createElement('source'); s.type = 'video/mp4'; video.appendChild(s); }
+    if (!s) {
+      s = document.createElement('source');
+      s.type = 'video/mp4';
+      video.appendChild(s);
+    }
     s.src = src;
     video.load();
   }
@@ -50,35 +54,16 @@
   leftSel?.addEventListener('change',  () => loadFromSelect(vidL, leftSel));
   rightSel?.addEventListener('change', () => loadFromSelect(vidR, rightSel));
 
-  // Play / Pause both
+  // Play / Pause both – this is all we keep
   playBoth?.addEventListener('click', async () => {
     try { await vidL.play(); } catch {}
     try { await vidR.play(); } catch {}
   });
-  pauseBoth?.addEventListener('click', () => { vidL.pause(); vidR.pause(); });
 
-  // Lock sync: gentle drift correction
-  const TOL = 0.15; // seconds
-  function resync(master, slave){
-    if (!lockSync?.checked) return;
-    const drift = master.currentTime - slave.currentTime;
-    if (Math.abs(drift) > TOL) slave.currentTime = master.currentTime;
-  }
+  pauseBoth?.addEventListener('click', () => {
+    vidL?.pause();
+    vidR?.pause();
+  });
 
-  // use whichever is playing as master
-  vidL?.addEventListener('timeupdate', () => { if (!vidL.paused) resync(vidL, vidR); });
-  vidR?.addEventListener('timeupdate', () => { if (!vidR.paused) resync(vidR, vidL); });
-
-  // keep both paused/playing together if locked
-  vidL?.addEventListener('play',  () => { if (lockSync?.checked && vidR.paused) vidR.play().catch(()=>{}); });
-  vidR?.addEventListener('play',  () => { if (lockSync?.checked && vidL.paused) vidL.play().catch(()=>{}); });
-  vidL?.addEventListener('pause', () => { if (lockSync?.checked && !vidR.paused) vidR.pause(); });
-  vidR?.addEventListener('pause', () => { if (lockSync?.checked && !vidL.paused) vidL.pause(); });
-
-  // mirror seeking when locked
-  function mirrorSeek(src, dst){
-    src?.addEventListener('seeked', () => { if (lockSync?.checked) dst.currentTime = src.currentTime; });
-  }
-  mirrorSeek(vidL, vidR);
-  mirrorSeek(vidR, vidL);
+  // no lockSync, no resync, no mirrored seeking
 })();
